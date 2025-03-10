@@ -52,11 +52,17 @@ export default function TabLayout() {
       <Tabs.Screen
         name="counter"
         options={{
-        title: 'Counter',
-        tabBarIcon: ({ color }) => <IconSymbol size={28} name="plusminus" color={color} />,
-  }}
-/>
-
+          title: 'Counter',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="plusminus" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="colorchanger"
+        options={{
+          title: 'Color Changer',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paintbrush.fill" color={color} />,
+        }}
+      />
     </Tabs>
   );
 }
